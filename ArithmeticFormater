@@ -1,3 +1,7 @@
+# attempt 1
+
+
+
 x = float(input("Enter first number: "))
 op = input("Enter operator: ")
 y = float(input("Enter second number: "))
@@ -22,3 +26,44 @@ def arithmetic_arranger(problems, val=False):
                 print("Error: Numbers must only contain digits.")
 
  return arithmetic_arranger(x,y)
+
+
+
+# attempt 2
+
+
+x = float(input("Enter first number: "))
+op = input("Enter operator: ")
+y = float(input("Enter second number: "))
+result = x+y or x-y
+out_of_counts = False
+try_limit = 5
+try_count = 0
+
+while out_of_counts == False:
+    if try_count > try_limit:
+        def arithmetic_arranger(problem, value = False):
+         problem = " "
+         result = " "
+         new_line = ["", "", "", ""]
+         for i in problem:
+             x,op,y = problem.split()
+             if op == "+":
+                 print("    "+ str(x) + "\n   " + str(y) + "\n --------" + "\n " + str(x+y))
+             if op == "-":
+                 print("    "+ str(x) + "\n   " + str(y) + "\n --------" + "\n " + str(x-y))
+                 for user_input in arithmetic_arranger():
+                    if len(x,y) > 4:
+                        print("Error: Numbers cannot be more than four digits.")
+                    if len(problem) > 5:
+                        print("Error: Too many problems.")
+                    if op != "+" or op != "-":
+                        print("Error: Operator must be '+' or '-'")
+                    if x and y != float:
+                        print("Error: Numbers must only contain digits.")
+        try_count += 1
+        print("Error - Out of tries. ")
+    else:
+        out_of_counts == True
+
+

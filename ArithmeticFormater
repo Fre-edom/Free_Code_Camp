@@ -1,0 +1,24 @@
+x = float(input("Enter first number: "))
+op = input("Enter operator: ")
+y = float(input("Enter second number: "))
+
+
+def arithmetic_arranger(problems, val=False):
+ problems = " "
+ for i in problems:
+     problems + 1
+     if op == "+":
+         print("    "+ str(x) + "\n   " + str(y) + "\n --------" + "\n " + str(x+y))
+     if op == "-":
+         print("    "+ str(x) + "\n   " + str(y) + "\n --------" + "\n " + str(x-y))
+         for user_input in arithmetic_arranger():
+            if len(x,y) > 4:
+                print("Error: Numbers cannot be more than four digits.")
+            if len(problems) > 5:
+                print("Error: Too many problems.")
+            if op != "+" or op != "-":
+                print("Error: Operator must be '+' or '-'")
+            if x and y != float:
+                print("Error: Numbers must only contain digits.")
+
+ return arithmetic_arranger(x,y)

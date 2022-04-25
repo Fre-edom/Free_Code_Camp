@@ -1,8 +1,8 @@
 # FreeCodeCamp
 Scientific Computing with Python Scientific Computing with Python Projects
 
-first is Arithmetic Formatter
-second is Time Calculator
-third is Budget App
-fourth is Polygon Area Calculator
-fifth is Probability Calculator
+1st is Arithmetic Formatter
+2nd is Time Calculator
+3rd is Budget App
+4th is Polygon Area Calculator
+5th is Probability Calculator

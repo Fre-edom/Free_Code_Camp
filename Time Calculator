@@ -1,0 +1,39 @@
+import datetime
+
+#help(datetime)
+
+# create function date_time  -- check
+# function should add the duration time to the start time and return the result.
+# + two required and one optional parameters
+# a start time in the 12-hour clock format (ending in AM or PM)
+# a duration time that indicates the number of hours and minutes
+# (optional) a starting day of the week, case insensitive
+
+#If the result will be the next day, it should show (next day) after the time.
+# If the result will be more than one day later, it should show (n days later) after the time,
+# where "n" is the number of days later.
+#If function is given the optional starting day of the week parameter,
+# then the output should display the day of the week of the result.
+# The day of the week in the output should appear after the time and before the number of days later.10AM Monday, after 4 days
+start = datetime.datetime (" ")
+duration = datetime.datetime(" ")
+new_time = datetime.datetime(start + duration)
+def add_time(start, duration):
+ ''' new_time = datetime.timedelta(start + duration)
+  start = " "
+  duration = " "
+  start = datetime.datetime(" ")
+  '''
+  if new_time ==  60:
+    return "One day later"
+  elif new_time > 60:
+    return new_time % 60
+
+
+#.sort(key = str.lower) #for case insensitive
+#--.upper()
+
+  message = " New time is: {%I}"
+  return message.format(new_time)
+
+add_time(3:10, 100)
